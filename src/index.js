@@ -1,10 +1,10 @@
 const {ApolloServer} = require('apollo-server');
 const mongoose = require('mongoose');
-const typeDefs = require('./schemas/taskSchema');
-const resolvers = require('./resolvers/taskResolver');
+const typeDefs = require('./schemas/projectSchema');
+const resolvers = require('./resolvers/projectResolver');
 
 const startServer = async () => {
-    await mongoose.connect('mongodb+srv://iarjona:Isarca2010X@clusterisarvi.7txs2.mongodb.net/?retryWrites=true&w=majority&appName=ClusterIsarvi');
+    await mongoose.connect('mongodb+srv://joderoblespe:tilines123@clustergraphql.pfkwu.mongodb.net/?retryWrites=true&w=majority&appName=ClusterGraphQL');
     const server = new 
     ApolloServer({ typeDefs, resolvers });
 
